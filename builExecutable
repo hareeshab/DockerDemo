@@ -1,0 +1,5 @@
+cd /
+cd /home/testuser/opt/mount_point/application/DckerDemo/
+docker build -t hello-world /home/testuser/opt/mount_point/application/DckerDemo/DckerDemo
+docker run -d --name helloworld -p 80:80 -v /home/testuser/opt/mount_point/application/DckerDemo/DckerDemo/src
+rc/:/var/www/html hello-world
